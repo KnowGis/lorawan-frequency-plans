@@ -1,0 +1,83 @@
+band-id: CN_470_510_OPG              # ID of the band
+uplink-channels:               # List of uplink channels (zero indexed)
+- frequency: 472300000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472500000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472700000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472900000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0                  
+- frequency: 473100000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 1
+- frequency: 473300000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 1
+- frequency: 473500000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 1
+- frequency: 473700000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 1
+downlink-channels:             # List of downlink channels (zero indexed)
+- frequency: 472300000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472500000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472700000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 472900000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0                   
+- frequency: 473100000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 473300000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 473500000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+- frequency: 473700000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0      
+radios:                        # Radio configuration (zero indexed, optional)
+- enable: true                 # Enable the radio
+  chip-type: SX1255            # Chip type
+  frequency: 472600000         # Frequency (Hz)
+  rssi-offset: -176            # RSSI offset (dbm)
+  tx:                          # Radio transmission configuration (optional)
+    min-frequency: 470000000   # Minimum frequency (Hz)
+    max-frequency: 510000000   # Maximum frequency (Hz)
+clock-source: 1                # Gateway clock source
+rx2-channel:                   # Rx2 channel (optional)
+  frequency: 477700000
+  min-data-rate: 0
+  max-data-rate: 5
+  radio: 0
+rx2-default-data-rate: 0       # Default data rate index of Rx2 (optional)
+max-eirp: 19.15                # Maximum EIRP as ceiling for any (sub-)band value (optional)
