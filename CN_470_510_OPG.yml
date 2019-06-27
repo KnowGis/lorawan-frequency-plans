@@ -75,5 +75,3 @@ rx2-channel:
   max-data-rate: 5
   radio: 0
 rx2-default-data-rate: 0
-max-eirp: 19.15
-clock-source: 1
